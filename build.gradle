@@ -1,0 +1,46 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.5'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+apply plugin:'war'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation "org.springframework.boot:spring-boot-starter-web"
+	implementation group: 'io.netty', name: 'netty-all', version: '4.0.33.Final'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'javax.servlet:jstl:1.2'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.7.1'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2'
+	implementation 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+	// swagger(문서 자동화 프레임 워크)
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+	// Java Simplified Encryption
+	implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.4'
+	// JWT(JSON Web Token) 토큰 기반 인증
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	// quartz
+	implementation 'org.springframework.boot:spring-boot-starter-quartz'
+	// apache kafka
+	implementation 'org.springframework.kafka:spring-kafka'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
