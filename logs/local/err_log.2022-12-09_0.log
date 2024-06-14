@@ -1,0 +1,4 @@
+ERROR 22-12-09 13:58:11[https-jsse-nio-8443-exec-3] [LoggingProducerListener:261] - Exception thrown when sending a message with key='null' and payload='>>>>>>>>>>welcome' to topic test:
+org.apache.kafka.common.errors.TimeoutException: Topic test not present in metadata after 60000 ms.
+ERROR 22-12-09 13:58:53[https-jsse-nio-8443-exec-9] [LoggingProducerListener:261] - Exception thrown when sending a message with key='null' and payload='>>>>>>>>>>welcome' to topic test:
+org.apache.kafka.common.errors.TimeoutException: Topic test not present in metadata after 60000 ms.
