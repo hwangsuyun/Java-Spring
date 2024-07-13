@@ -1,0 +1,799 @@
+INFO  22-12-21 11:10:37[restartedMain] [HelloWorldSpringBootApplication:55] - Starting HelloWorldSpringBootApplication using Java 17.0.3 on 황수연 with PID 13776 (C:\Users\user\IdeaProjects\HelloWorld-SpringBoot\build\classes\java\main started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  22-12-21 11:10:37[restartedMain] [HelloWorldSpringBootApplication:640] - The following 1 profile is active: "local"
+INFO  22-12-21 11:10:37[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  22-12-21 11:10:37[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  22-12-21 11:10:38[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 11:10:38[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  22-12-21 11:10:38[restartedMain] [RepositoryConfigurationExtensionSupport:349] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.database.repository.MemberRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  22-12-21 11:10:38[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 57 ms. Found 0 JDBC repository interfaces.
+INFO  22-12-21 11:10:38[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 11:10:38[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  22-12-21 11:10:38[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+INFO  22-12-21 11:10:39[restartedMain] [EnableEncryptablePropertiesBeanFactoryPostProcessor:40] - Post-processing PropertySource instances
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:10:39[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:10:39[restartedMain] [DefaultLazyPropertyFilter:31] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+INFO  22-12-21 11:10:39[restartedMain] [DefaultLazyPropertyResolver:35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+INFO  22-12-21 11:10:39[restartedMain] [DefaultLazyPropertyDetector:35] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+INFO  22-12-21 11:10:40[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8443 (https) 8009 (http) 8080 (http)
+INFO  22-12-21 11:10:40[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 11:10:40[restartedMain] [AjpNioProtocol:173] - Initializing ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 11:10:40[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 11:10:40[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  22-12-21 11:10:40[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+INFO  22-12-21 11:10:40[restartedMain] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  22-12-21 11:10:40[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  22-12-21 11:10:40[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 3341 ms
+INFO  22-12-21 11:10:40[restartedMain] [DefaultLazyEncryptor:32] - Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@65b828f0 with name: jasyptStringEncryptor
+INFO  22-12-21 11:10:40[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  22-12-21 11:10:40[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  22-12-21 11:10:40[restartedMain] [H2ConsoleAutoConfiguration:98] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+INFO  22-12-21 11:10:41[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  22-12-21 11:10:41[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.12.Final
+INFO  22-12-21 11:10:41[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  22-12-21 11:10:41[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+DEBUG 22-12-21 11:10:42[restartedMain] [SQL:144] - 
+    
+    drop table if exists member CASCADE 
+DEBUG 22-12-21 11:10:42[restartedMain] [SQL:144] - 
+    
+    create table member (
+       mbr_no bigint generated by default as identity,
+        id varchar(255),
+        name varchar(255),
+        primary key (mbr_no)
+    )
+INFO  22-12-21 11:10:42[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  22-12-21 11:10:42[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  22-12-21 11:10:42[Thread-5] [PlatformDependent:101] - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+INFO  22-12-21 11:10:42[restartedMain] [StdSchedulerFactory:1220] - Using default implementation for ThreadExecutor
+INFO  22-12-21 11:10:43[restartedMain] [SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  22-12-21 11:10:43[restartedMain] [QuartzScheduler:229] - Quartz Scheduler v.2.3.2 created.
+INFO  22-12-21 11:10:43[restartedMain] [RAMJobStore:155] - RAMJobStore initialized.
+INFO  22-12-21 11:10:43[restartedMain] [QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  22-12-21 11:10:43[restartedMain] [StdSchedulerFactory:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+INFO  22-12-21 11:10:43[restartedMain] [StdSchedulerFactory:1378] - Quartz scheduler version: 2.3.2
+INFO  22-12-21 11:10:43[restartedMain] [QuartzScheduler:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@63428708
+WARN  22-12-21 11:10:43[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  22-12-21 11:10:44[restartedMain] [OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+INFO  22-12-21 11:10:44[restartedMain] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+INFO  22-12-21 11:10:44[restartedMain] [ConsumerConfig:376] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.111.128:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-testgroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testgroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  22-12-21 11:10:45[restartedMain] [AppInfoParser:119] - Kafka version: 3.1.2
+INFO  22-12-21 11:10:45[restartedMain] [AppInfoParser:120] - Kafka commitId: f8c67dc3ae0a3265
+INFO  22-12-21 11:10:45[restartedMain] [AppInfoParser:121] - Kafka startTimeMs: 1671588645199
+INFO  22-12-21 11:10:45[restartedMain] [KafkaConsumer:966] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Subscribed to topic(s): test
+INFO  22-12-21 11:10:45[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 11:10:45[restartedMain] [AjpNioProtocol:173] - Starting ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 11:10:45[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 11:10:45[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8443 (https) 8009 (http) 8080 (http) with context path ''
+INFO  22-12-21 11:10:45[restartedMain] [RefreshScopeRefreshedEventListener:47] - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+INFO  22-12-21 11:10:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemProperties refreshed
+INFO  22-12-21 11:10:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemEnvironment refreshed
+INFO  22-12-21 11:10:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source random refreshed
+INFO  22-12-21 11:10:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+INFO  22-12-21 11:10:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source devtools refreshed
+INFO  22-12-21 11:10:45[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:10:45[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 11:10:45[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 11:10:45[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+INFO  22-12-21 11:10:45[restartedMain] [SchedulerFactoryBean:729] - Starting Quartz Scheduler now
+INFO  22-12-21 11:10:45[restartedMain] [QuartzScheduler:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+INFO  22-12-21 11:10:45[restartedMain] [HelloWorldSpringBootApplication:61] - Started HelloWorldSpringBootApplication in 9.562 seconds (JVM running for 10.16)
+INFO  22-12-21 11:10:50[quartzScheduler_Worker-1] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:10:53[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:819] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Disconnecting from node -1 due to socket connection setup timeout. The timeout value is 8723 ms.
+WARN  22-12-21 11:10:53[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 11:11:00[quartzScheduler_Worker-2] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:11:10[quartzScheduler_Worker-3] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:11:10[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:819] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Disconnecting from node -1 due to socket connection setup timeout. The timeout value is 16444 ms.
+WARN  22-12-21 11:11:10[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 11:12:06[restartedMain] [HelloWorldSpringBootApplication:55] - Starting HelloWorldSpringBootApplication using Java 17.0.3 on 황수연 with PID 1128 (C:\Users\user\IdeaProjects\HelloWorld-SpringBoot\build\classes\java\main started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  22-12-21 11:12:06[restartedMain] [HelloWorldSpringBootApplication:640] - The following 1 profile is active: "local"
+INFO  22-12-21 11:12:06[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  22-12-21 11:12:06[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  22-12-21 11:12:07[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 11:12:07[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  22-12-21 11:12:07[restartedMain] [RepositoryConfigurationExtensionSupport:349] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.database.repository.MemberRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  22-12-21 11:12:07[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 55 ms. Found 0 JDBC repository interfaces.
+INFO  22-12-21 11:12:07[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 11:12:07[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  22-12-21 11:12:07[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+INFO  22-12-21 11:12:08[restartedMain] [EnableEncryptablePropertiesBeanFactoryPostProcessor:40] - Post-processing PropertySource instances
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:12:08[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:12:08[restartedMain] [DefaultLazyPropertyFilter:31] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+INFO  22-12-21 11:12:08[restartedMain] [DefaultLazyPropertyResolver:35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+INFO  22-12-21 11:12:08[restartedMain] [DefaultLazyPropertyDetector:35] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+INFO  22-12-21 11:12:09[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8443 (https) 8009 (http) 8080 (http)
+INFO  22-12-21 11:12:09[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 11:12:09[restartedMain] [AjpNioProtocol:173] - Initializing ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 11:12:09[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 11:12:09[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  22-12-21 11:12:09[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+INFO  22-12-21 11:12:09[restartedMain] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  22-12-21 11:12:09[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  22-12-21 11:12:09[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 3301 ms
+INFO  22-12-21 11:12:09[restartedMain] [DefaultLazyEncryptor:32] - Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@42eda835 with name: jasyptStringEncryptor
+INFO  22-12-21 11:12:09[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  22-12-21 11:12:09[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  22-12-21 11:12:09[restartedMain] [H2ConsoleAutoConfiguration:98] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+INFO  22-12-21 11:12:10[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  22-12-21 11:12:10[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.12.Final
+INFO  22-12-21 11:12:10[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  22-12-21 11:12:10[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+DEBUG 22-12-21 11:12:11[restartedMain] [SQL:144] - 
+    
+    drop table if exists member CASCADE 
+DEBUG 22-12-21 11:12:11[restartedMain] [SQL:144] - 
+    
+    create table member (
+       mbr_no bigint generated by default as identity,
+        id varchar(255),
+        name varchar(255),
+        primary key (mbr_no)
+    )
+INFO  22-12-21 11:12:11[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  22-12-21 11:12:11[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  22-12-21 11:12:11[Thread-5] [PlatformDependent:101] - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+INFO  22-12-21 11:12:11[restartedMain] [StdSchedulerFactory:1220] - Using default implementation for ThreadExecutor
+INFO  22-12-21 11:12:11[restartedMain] [SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  22-12-21 11:12:11[restartedMain] [QuartzScheduler:229] - Quartz Scheduler v.2.3.2 created.
+INFO  22-12-21 11:12:11[restartedMain] [RAMJobStore:155] - RAMJobStore initialized.
+INFO  22-12-21 11:12:12[restartedMain] [QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  22-12-21 11:12:12[restartedMain] [StdSchedulerFactory:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+INFO  22-12-21 11:12:12[restartedMain] [StdSchedulerFactory:1378] - Quartz scheduler version: 2.3.2
+INFO  22-12-21 11:12:12[restartedMain] [QuartzScheduler:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@755f5cfb
+WARN  22-12-21 11:12:12[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  22-12-21 11:12:12[restartedMain] [OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+INFO  22-12-21 11:12:12[restartedMain] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+INFO  22-12-21 11:12:13[restartedMain] [ConsumerConfig:376] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.111.128:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-testgroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testgroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  22-12-21 11:12:13[restartedMain] [AppInfoParser:119] - Kafka version: 3.1.2
+INFO  22-12-21 11:12:13[restartedMain] [AppInfoParser:120] - Kafka commitId: f8c67dc3ae0a3265
+INFO  22-12-21 11:12:13[restartedMain] [AppInfoParser:121] - Kafka startTimeMs: 1671588733697
+INFO  22-12-21 11:12:13[restartedMain] [KafkaConsumer:966] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Subscribed to topic(s): test
+INFO  22-12-21 11:12:13[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 11:12:14[restartedMain] [AjpNioProtocol:173] - Starting ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 11:12:14[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 11:12:14[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8443 (https) 8009 (http) 8080 (http) with context path ''
+INFO  22-12-21 11:12:14[restartedMain] [RefreshScopeRefreshedEventListener:47] - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+INFO  22-12-21 11:12:14[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemProperties refreshed
+INFO  22-12-21 11:12:14[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemEnvironment refreshed
+INFO  22-12-21 11:12:14[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source random refreshed
+INFO  22-12-21 11:12:14[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+INFO  22-12-21 11:12:14[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source devtools refreshed
+INFO  22-12-21 11:12:14[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 11:12:14[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 11:12:14[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 11:12:14[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+INFO  22-12-21 11:12:14[restartedMain] [SchedulerFactoryBean:729] - Starting Quartz Scheduler now
+INFO  22-12-21 11:12:14[restartedMain] [QuartzScheduler:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+INFO  22-12-21 11:12:14[restartedMain] [HelloWorldSpringBootApplication:61] - Started HelloWorldSpringBootApplication in 9.008 seconds (JVM running for 9.63)
+INFO  22-12-21 11:12:20[quartzScheduler_Worker-1] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:12:24[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:819] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Disconnecting from node -1 due to socket connection setup timeout. The timeout value is 10901 ms.
+WARN  22-12-21 11:12:24[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 11:12:30[quartzScheduler_Worker-2] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:12:40[quartzScheduler_Worker-3] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:12:45[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:935] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Node -1 disconnected.
+WARN  22-12-21 11:12:45[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:775] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Connection to node -1 (/192.168.111.128:9092) could not be established. Broker may not be available.
+WARN  22-12-21 11:12:45[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 11:12:50[quartzScheduler_Worker-4] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:13:00[quartzScheduler_Worker-5] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:13:07[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:935] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Node -1 disconnected.
+WARN  22-12-21 11:13:07[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:775] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Connection to node -1 (/192.168.111.128:9092) could not be established. Broker may not be available.
+WARN  22-12-21 11:13:07[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 11:13:10[quartzScheduler_Worker-6] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:13:20[quartzScheduler_Worker-7] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 11:13:28[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:935] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Node -1 disconnected.
+WARN  22-12-21 11:13:28[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:775] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Connection to node -1 (/192.168.111.128:9092) could not be established. Broker may not be available.
+WARN  22-12-21 11:13:28[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 11:13:30[quartzScheduler_Worker-8] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 14:50:36[restartedMain] [HelloWorldSpringBootApplication:55] - Starting HelloWorldSpringBootApplication using Java 17.0.3 on 황수연 with PID 6276 (C:\Users\user\IdeaProjects\HelloWorld-SpringBoot\build\classes\java\main started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  22-12-21 14:50:36[restartedMain] [HelloWorldSpringBootApplication:640] - The following 1 profile is active: "local"
+INFO  22-12-21 14:50:36[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  22-12-21 14:50:36[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  22-12-21 14:50:37[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 14:50:37[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  22-12-21 14:50:37[restartedMain] [RepositoryConfigurationExtensionSupport:349] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.database.repository.MemberRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  22-12-21 14:50:37[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 64 ms. Found 0 JDBC repository interfaces.
+INFO  22-12-21 14:50:37[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 14:50:37[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  22-12-21 14:50:37[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+INFO  22-12-21 14:50:38[restartedMain] [EnableEncryptablePropertiesBeanFactoryPostProcessor:40] - Post-processing PropertySource instances
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 14:50:38[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 14:50:38[restartedMain] [DefaultLazyPropertyFilter:31] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+INFO  22-12-21 14:50:38[restartedMain] [DefaultLazyPropertyResolver:35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+INFO  22-12-21 14:50:38[restartedMain] [DefaultLazyPropertyDetector:35] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+INFO  22-12-21 14:50:39[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8443 (https) 8009 (http) 8080 (http)
+INFO  22-12-21 14:50:39[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 14:50:39[restartedMain] [AjpNioProtocol:173] - Initializing ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 14:50:39[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 14:50:39[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  22-12-21 14:50:39[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+INFO  22-12-21 14:50:39[restartedMain] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  22-12-21 14:50:39[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  22-12-21 14:50:39[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 3675 ms
+INFO  22-12-21 14:50:39[restartedMain] [DefaultLazyEncryptor:32] - Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@59372f0f with name: jasyptStringEncryptor
+INFO  22-12-21 14:50:40[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  22-12-21 14:50:40[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  22-12-21 14:50:40[restartedMain] [H2ConsoleAutoConfiguration:98] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+INFO  22-12-21 14:50:40[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  22-12-21 14:50:40[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.12.Final
+INFO  22-12-21 14:50:41[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  22-12-21 14:50:41[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+DEBUG 22-12-21 14:50:42[restartedMain] [SQL:144] - 
+    
+    drop table if exists member CASCADE 
+DEBUG 22-12-21 14:50:42[restartedMain] [SQL:144] - 
+    
+    create table member (
+       mbr_no bigint generated by default as identity,
+        id varchar(255),
+        name varchar(255),
+        primary key (mbr_no)
+    )
+INFO  22-12-21 14:50:42[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  22-12-21 14:50:42[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  22-12-21 14:50:42[Thread-5] [PlatformDependent:101] - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+INFO  22-12-21 14:50:42[restartedMain] [StdSchedulerFactory:1220] - Using default implementation for ThreadExecutor
+INFO  22-12-21 14:50:42[restartedMain] [SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  22-12-21 14:50:42[restartedMain] [QuartzScheduler:229] - Quartz Scheduler v.2.3.2 created.
+INFO  22-12-21 14:50:42[restartedMain] [RAMJobStore:155] - RAMJobStore initialized.
+INFO  22-12-21 14:50:42[restartedMain] [QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  22-12-21 14:50:42[restartedMain] [StdSchedulerFactory:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+INFO  22-12-21 14:50:42[restartedMain] [StdSchedulerFactory:1378] - Quartz scheduler version: 2.3.2
+INFO  22-12-21 14:50:42[restartedMain] [QuartzScheduler:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@256e8ed0
+WARN  22-12-21 14:50:43[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  22-12-21 14:50:43[restartedMain] [OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+INFO  22-12-21 14:50:44[restartedMain] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+INFO  22-12-21 14:50:44[restartedMain] [ConsumerConfig:376] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.111.128:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-testgroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testgroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  22-12-21 14:50:44[restartedMain] [AppInfoParser:119] - Kafka version: 3.1.2
+INFO  22-12-21 14:50:44[restartedMain] [AppInfoParser:120] - Kafka commitId: f8c67dc3ae0a3265
+INFO  22-12-21 14:50:44[restartedMain] [AppInfoParser:121] - Kafka startTimeMs: 1671601844905
+INFO  22-12-21 14:50:44[restartedMain] [KafkaConsumer:966] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Subscribed to topic(s): test
+INFO  22-12-21 14:50:44[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 14:50:45[restartedMain] [AjpNioProtocol:173] - Starting ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 14:50:45[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 14:50:45[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8443 (https) 8009 (http) 8080 (http) with context path ''
+INFO  22-12-21 14:50:45[restartedMain] [RefreshScopeRefreshedEventListener:47] - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+INFO  22-12-21 14:50:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemProperties refreshed
+INFO  22-12-21 14:50:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemEnvironment refreshed
+INFO  22-12-21 14:50:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source random refreshed
+INFO  22-12-21 14:50:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+INFO  22-12-21 14:50:45[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source devtools refreshed
+INFO  22-12-21 14:50:45[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 14:50:45[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 14:50:45[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 14:50:45[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+INFO  22-12-21 14:50:45[restartedMain] [SchedulerFactoryBean:729] - Starting Quartz Scheduler now
+INFO  22-12-21 14:50:45[restartedMain] [QuartzScheduler:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+INFO  22-12-21 14:50:45[restartedMain] [HelloWorldSpringBootApplication:61] - Started HelloWorldSpringBootApplication in 10.004 seconds (JVM running for 10.783)
+INFO  22-12-21 14:50:50[quartzScheduler_Worker-1] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 14:50:54[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:819] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Disconnecting from node -1 due to socket connection setup timeout. The timeout value is 10042 ms.
+WARN  22-12-21 14:50:54[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 14:51:00[quartzScheduler_Worker-2] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 14:51:10[quartzScheduler_Worker-3] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 14:51:16[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:935] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Node -1 disconnected.
+WARN  22-12-21 14:51:16[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:775] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Connection to node -1 (/192.168.111.128:9092) could not be established. Broker may not be available.
+WARN  22-12-21 14:51:16[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 14:51:20[quartzScheduler_Worker-4] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 14:51:30[quartzScheduler_Worker-5] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 14:51:37[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:935] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Node -1 disconnected.
+WARN  22-12-21 14:51:37[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:775] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Connection to node -1 (/192.168.111.128:9092) could not be established. Broker may not be available.
+WARN  22-12-21 14:51:37[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 17:08:44[restartedMain] [HelloWorldSpringBootApplication:55] - Starting HelloWorldSpringBootApplication using Java 17.0.3 on 황수연 with PID 752 (C:\Users\user\IdeaProjects\HelloWorld-SpringBoot\build\classes\java\main started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  22-12-21 17:08:44[restartedMain] [HelloWorldSpringBootApplication:640] - The following 1 profile is active: "local"
+INFO  22-12-21 17:08:45[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  22-12-21 17:08:45[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  22-12-21 17:08:46[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 17:08:46[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  22-12-21 17:08:46[restartedMain] [RepositoryConfigurationExtensionSupport:349] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.database.repository.MemberRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  22-12-21 17:08:46[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 58 ms. Found 0 JDBC repository interfaces.
+INFO  22-12-21 17:08:46[restartedMain] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  22-12-21 17:08:46[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  22-12-21 17:08:46[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+INFO  22-12-21 17:08:47[restartedMain] [EnableEncryptablePropertiesBeanFactoryPostProcessor:40] - Post-processing PropertySource instances
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 17:08:47[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 17:08:47[restartedMain] [DefaultLazyPropertyFilter:31] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+INFO  22-12-21 17:08:47[restartedMain] [DefaultLazyPropertyResolver:35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+INFO  22-12-21 17:08:47[restartedMain] [DefaultLazyPropertyDetector:35] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+INFO  22-12-21 17:08:47[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8443 (https) 8009 (http) 8080 (http)
+INFO  22-12-21 17:08:47[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 17:08:47[restartedMain] [AjpNioProtocol:173] - Initializing ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 17:08:47[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 17:08:47[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  22-12-21 17:08:47[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+INFO  22-12-21 17:08:48[restartedMain] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  22-12-21 17:08:48[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  22-12-21 17:08:48[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 3291 ms
+INFO  22-12-21 17:08:48[restartedMain] [DefaultLazyEncryptor:32] - Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@1c12cb25 with name: jasyptStringEncryptor
+INFO  22-12-21 17:08:48[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  22-12-21 17:08:48[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  22-12-21 17:08:48[restartedMain] [H2ConsoleAutoConfiguration:98] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+INFO  22-12-21 17:08:49[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  22-12-21 17:08:49[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.12.Final
+INFO  22-12-21 17:08:49[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  22-12-21 17:08:49[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+DEBUG 22-12-21 17:08:50[restartedMain] [SQL:144] - 
+    
+    drop table if exists member CASCADE 
+DEBUG 22-12-21 17:08:50[restartedMain] [SQL:144] - 
+    
+    create table member (
+       mbr_no bigint generated by default as identity,
+        id varchar(255),
+        name varchar(255),
+        primary key (mbr_no)
+    )
+INFO  22-12-21 17:08:50[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  22-12-21 17:08:50[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  22-12-21 17:08:50[Thread-5] [PlatformDependent:101] - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+INFO  22-12-21 17:08:50[restartedMain] [StdSchedulerFactory:1220] - Using default implementation for ThreadExecutor
+INFO  22-12-21 17:08:50[restartedMain] [SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  22-12-21 17:08:50[restartedMain] [QuartzScheduler:229] - Quartz Scheduler v.2.3.2 created.
+INFO  22-12-21 17:08:50[restartedMain] [RAMJobStore:155] - RAMJobStore initialized.
+INFO  22-12-21 17:08:50[restartedMain] [QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  22-12-21 17:08:50[restartedMain] [StdSchedulerFactory:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+INFO  22-12-21 17:08:50[restartedMain] [StdSchedulerFactory:1378] - Quartz scheduler version: 2.3.2
+INFO  22-12-21 17:08:50[restartedMain] [QuartzScheduler:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@58adb712
+WARN  22-12-21 17:08:51[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  22-12-21 17:08:51[restartedMain] [OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+INFO  22-12-21 17:08:51[restartedMain] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+INFO  22-12-21 17:08:52[restartedMain] [ConsumerConfig:376] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.111.128:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-testgroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testgroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  22-12-21 17:08:52[restartedMain] [AppInfoParser:119] - Kafka version: 3.1.2
+INFO  22-12-21 17:08:52[restartedMain] [AppInfoParser:120] - Kafka commitId: f8c67dc3ae0a3265
+INFO  22-12-21 17:08:52[restartedMain] [AppInfoParser:121] - Kafka startTimeMs: 1671610132628
+INFO  22-12-21 17:08:52[restartedMain] [KafkaConsumer:966] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Subscribed to topic(s): test
+INFO  22-12-21 17:08:52[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["https-jsse-nio-8443"]
+INFO  22-12-21 17:08:52[restartedMain] [AjpNioProtocol:173] - Starting ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  22-12-21 17:08:52[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  22-12-21 17:08:52[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8443 (https) 8009 (http) 8080 (http) with context path ''
+INFO  22-12-21 17:08:52[restartedMain] [RefreshScopeRefreshedEventListener:47] - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+INFO  22-12-21 17:08:52[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemProperties refreshed
+INFO  22-12-21 17:08:52[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source systemEnvironment refreshed
+INFO  22-12-21 17:08:52[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source random refreshed
+INFO  22-12-21 17:08:52[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+INFO  22-12-21 17:08:52[restartedMain] [CachingDelegateEncryptablePropertySource:55] - Property Source devtools refreshed
+INFO  22-12-21 17:08:52[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  22-12-21 17:08:52[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  22-12-21 17:08:52[restartedMain] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  22-12-21 17:08:52[restartedMain] [EncryptablePropertySourceConverter:81] - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+INFO  22-12-21 17:08:53[restartedMain] [SchedulerFactoryBean:729] - Starting Quartz Scheduler now
+INFO  22-12-21 17:08:53[restartedMain] [QuartzScheduler:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+INFO  22-12-21 17:08:53[quartzScheduler_Worker-1] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 17:08:53[restartedMain] [HelloWorldSpringBootApplication:61] - Started HelloWorldSpringBootApplication in 8.739 seconds (JVM running for 9.67)
+INFO  22-12-21 17:09:00[quartzScheduler_Worker-2] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 17:09:01[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:819] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Disconnecting from node -1 due to socket connection setup timeout. The timeout value is 8864 ms.
+WARN  22-12-21 17:09:01[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 17:09:10[quartzScheduler_Worker-3] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 17:09:20[quartzScheduler_Worker-4] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 17:09:22[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:935] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Node -1 disconnected.
+WARN  22-12-21 17:09:22[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:775] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Connection to node -1 (/192.168.111.128:9092) could not be established. Broker may not be available.
+WARN  22-12-21 17:09:22[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 17:09:30[quartzScheduler_Worker-5] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 17:09:40[quartzScheduler_Worker-6] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 17:09:43[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:935] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Node -1 disconnected.
+WARN  22-12-21 17:09:43[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:775] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Connection to node -1 (/192.168.111.128:9092) could not be established. Broker may not be available.
+WARN  22-12-21 17:09:43[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [NetworkClient:1063] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Bootstrap broker 192.168.111.128:9092 (id: -1 rack: null) disconnected
+INFO  22-12-21 17:09:50[quartzScheduler_Worker-7] [TestJobA:16] - 10초마다 Job 실행
+INFO  22-12-21 17:10:00[quartzScheduler_Worker-8] [TestJobA:16] - 10초마다 Job 실행
