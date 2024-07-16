@@ -1,0 +1,456 @@
+INFO  23-01-04 09:47:28[Test worker] [HelloWorldSpringBootApplicationTests:55] - Starting HelloWorldSpringBootApplicationTests using Java 17.0.3 on 황수연 with PID 9728 (started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  23-01-04 09:47:28[Test worker] [HelloWorldSpringBootApplicationTests:640] - The following 1 profile is active: "local"
+INFO  23-01-04 09:47:29[Test worker] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  23-01-04 09:47:29[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  23-01-04 09:47:29[Test worker] [RepositoryConfigurationExtensionSupport:349] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.database.repository.MemberRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  23-01-04 09:47:29[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 60 ms. Found 0 JDBC repository interfaces.
+INFO  23-01-04 09:47:29[Test worker] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  23-01-04 09:47:29[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-01-04 09:47:29[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+INFO  23-01-04 09:47:30[Test worker] [EnableEncryptablePropertiesBeanFactoryPostProcessor:40] - Post-processing PropertySource instances
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+INFO  23-01-04 09:47:30[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:30[Test worker] [DefaultLazyPropertyFilter:31] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+INFO  23-01-04 09:47:30[Test worker] [DefaultLazyPropertyResolver:35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+INFO  23-01-04 09:47:30[Test worker] [DefaultLazyPropertyDetector:35] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+INFO  23-01-04 09:47:30[Test worker] [DefaultLazyEncryptor:32] - Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@56ec6960 with name: jasyptStringEncryptor
+INFO  23-01-04 09:47:31[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-01-04 09:47:31[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.12.Final
+INFO  23-01-04 09:47:31[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-01-04 09:47:31[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-01-04 09:47:31[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-01-04 09:47:31[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+DEBUG 23-01-04 09:47:32[Test worker] [SQL:144] - 
+    
+    drop table if exists member CASCADE 
+DEBUG 23-01-04 09:47:32[Test worker] [SQL:144] - 
+    
+    create table member (
+       mbr_no bigint generated by default as identity,
+        id varchar(255),
+        name varchar(255),
+        primary key (mbr_no)
+    )
+INFO  23-01-04 09:47:32[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-01-04 09:47:32[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-01-04 09:47:33[Thread-7] [PlatformDependent:101] - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+INFO  23-01-04 09:47:33[Test worker] [StdSchedulerFactory:1220] - Using default implementation for ThreadExecutor
+INFO  23-01-04 09:47:33[Test worker] [SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  23-01-04 09:47:33[Test worker] [QuartzScheduler:229] - Quartz Scheduler v.2.3.2 created.
+INFO  23-01-04 09:47:33[Test worker] [RAMJobStore:155] - RAMJobStore initialized.
+INFO  23-01-04 09:47:33[Test worker] [QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  23-01-04 09:47:33[Test worker] [StdSchedulerFactory:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+INFO  23-01-04 09:47:33[Test worker] [StdSchedulerFactory:1378] - Quartz scheduler version: 2.3.2
+INFO  23-01-04 09:47:33[Test worker] [QuartzScheduler:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@285ac29
+WARN  23-01-04 09:47:34[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-01-04 09:47:34[Test worker] [H2ConsoleAutoConfiguration:98] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+INFO  23-01-04 09:47:35[Test worker] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+INFO  23-01-04 09:47:36[Test worker] [ConsumerConfig:376] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.111.128:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-testgroup-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testgroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  23-01-04 09:47:36[Test worker] [AppInfoParser:119] - Kafka version: 3.1.2
+INFO  23-01-04 09:47:36[Test worker] [AppInfoParser:120] - Kafka commitId: f8c67dc3ae0a3265
+INFO  23-01-04 09:47:36[Test worker] [AppInfoParser:121] - Kafka startTimeMs: 1672793256246
+INFO  23-01-04 09:47:36[Test worker] [KafkaConsumer:966] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Subscribed to topic(s): test
+INFO  23-01-04 09:47:36[Test worker] [SchedulerFactoryBean:729] - Starting Quartz Scheduler now
+INFO  23-01-04 09:47:36[Test worker] [QuartzScheduler:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+INFO  23-01-04 09:47:36[Test worker] [HelloWorldSpringBootApplicationTests:61] - Started HelloWorldSpringBootApplicationTests in 8.178 seconds (JVM running for 9.555)
+INFO  23-01-04 09:47:36[Test worker] [SpringBootTestContextBootstrapper:305] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.JasyptApplicationTests], using SpringBootContextLoader
+INFO  23-01-04 09:47:36[Test worker] [AbstractContextLoader:264] - Could not detect default resource locations for test class [com.example.JasyptApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+INFO  23-01-04 09:47:36[Test worker] [AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.example.JasyptApplicationTests]: JasyptApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  23-01-04 09:47:36[Test worker] [SpringBootTestContextBootstrapper:238] - Found @SpringBootConfiguration com.example.HelloWorldSpringBootApplication for test class com.example.JasyptApplicationTests
+INFO  23-01-04 09:47:36[Test worker] [SpringBootTestContextBootstrapper:245] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  23-01-04 09:47:36[Test worker] [SpringBootTestContextBootstrapper:174] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a120e41, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@17fd9fbb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7a7b6556, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c04b755, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6eec092, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d9587b3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5ce50c82, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@75f2a654, org.springframework.test.context.event.EventPublishingTestExecutionListener@5680228, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5411a529, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@20e43235, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4044f07b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5f8c319, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5c190662, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5d6de24e]
+INFO  23-01-04 09:47:36[Test worker] [DataJpaTestContextBootstrapper:305] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.MemberRepositoryTest], using SpringBootContextLoader
+INFO  23-01-04 09:47:36[Test worker] [AbstractContextLoader:264] - Could not detect default resource locations for test class [com.example.MemberRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+INFO  23-01-04 09:47:36[Test worker] [AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.example.MemberRepositoryTest]: MemberRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  23-01-04 09:47:36[Test worker] [SpringBootTestContextBootstrapper:238] - Found @SpringBootConfiguration com.example.HelloWorldSpringBootApplication for test class com.example.MemberRepositoryTest
+INFO  23-01-04 09:47:36[Test worker] [DataJpaTestContextBootstrapper:245] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  23-01-04 09:47:36[Test worker] [DataJpaTestContextBootstrapper:174] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e1ac80e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4170ee0f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4b95fdf2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1080234b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@28e2d3ed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e245068, org.springframework.test.context.transaction.TransactionalTestExecutionListener@aba4a33, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1bb1ba54, org.springframework.test.context.event.EventPublishingTestExecutionListener@25727f74, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6999dca2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@312af870, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@27df971b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1160c54b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@363b7709, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5034e0c6]
+INFO  23-01-04 09:47:36[Test worker] [MemberRepositoryTest:55] - Starting MemberRepositoryTest using Java 17.0.3 on 황수연 with PID 9728 (started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  23-01-04 09:47:36[Test worker] [MemberRepositoryTest:640] - The following 1 profile is active: "local"
+INFO  23-01-04 09:47:36[Test worker] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  23-01-04 09:47:36[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-01-04 09:47:37[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+INFO  23-01-04 09:47:37[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-01-04 09:47:37[Test worker] [HikariDataSource:110] - HikariPool-2 - Starting...
+INFO  23-01-04 09:47:37[Test worker] [HikariDataSource:123] - HikariPool-2 - Start completed.
+INFO  23-01-04 09:47:37[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+DEBUG 23-01-04 09:47:37[Test worker] [SQL:144] - 
+    
+    drop table if exists member CASCADE 
+DEBUG 23-01-04 09:47:37[Test worker] [SQL:144] - 
+    
+    create table member (
+       mbr_no bigint generated by default as identity,
+        id varchar(255),
+        name varchar(255),
+        primary key (mbr_no)
+    )
+INFO  23-01-04 09:47:37[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-01-04 09:47:37[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-01-04 09:47:37[Test worker] [MemberRepositoryTest:61] - Started MemberRepositoryTest in 0.683 seconds (JVM running for 10.672)
+DEBUG 23-01-04 09:47:37[Test worker] [SQL:144] - 
+    select
+        membervo0_.mbr_no as mbr_no1_0_,
+        membervo0_.id as id2_0_,
+        membervo0_.name as name3_0_ 
+    from
+        member membervo0_ 
+    where
+        membervo0_.id=?
+TRACE 23-01-04 09:47:37[Test worker] [BasicBinder:64] - binding parameter [1] as [VARCHAR] - [test]
+INFO  23-01-04 09:47:37[Test worker] [RestClientTestContextBootstrapper:305] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.MemberServiceTest], using SpringBootContextLoader
+INFO  23-01-04 09:47:37[Test worker] [AbstractContextLoader:264] - Could not detect default resource locations for test class [com.example.MemberServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+INFO  23-01-04 09:47:37[Test worker] [AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.example.MemberServiceTest]: MemberServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  23-01-04 09:47:37[Test worker] [SpringBootTestContextBootstrapper:238] - Found @SpringBootConfiguration com.example.HelloWorldSpringBootApplication for test class com.example.MemberServiceTest
+INFO  23-01-04 09:47:37[Test worker] [RestClientTestContextBootstrapper:245] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  23-01-04 09:47:37[Test worker] [RestClientTestContextBootstrapper:174] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@53785d1a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@75d454a4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@42cf08a1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@46092840, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@57082d16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ae2227, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a1eb893, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@35daccb8, org.springframework.test.context.event.EventPublishingTestExecutionListener@23ac3788, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52e296c0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d77762f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7e2bd635, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3c79be0f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7aeb7bd6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5c0bacaa]
+INFO  23-01-04 09:47:37[Test worker] [MemberServiceTest:55] - Starting MemberServiceTest using Java 17.0.3 on 황수연 with PID 9728 (started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  23-01-04 09:47:37[Test worker] [MemberServiceTest:640] - The following 1 profile is active: "local"
+INFO  23-01-04 09:47:38[Test worker] [MemberServiceTest:61] - Started MemberServiceTest in 0.4 seconds (JVM running for 11.37)
+INFO  23-01-04 09:47:38[Test worker] [SpringBootTestContextBootstrapper:305] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.TestJpaRestControllerTest], using SpringBootContextLoader
+INFO  23-01-04 09:47:38[Test worker] [AbstractContextLoader:264] - Could not detect default resource locations for test class [com.example.TestJpaRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+INFO  23-01-04 09:47:38[Test worker] [AnnotationConfigContextLoaderUtils:83] - Could not detect default configuration classes for test class [com.example.TestJpaRestControllerTest]: TestJpaRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  23-01-04 09:47:38[Test worker] [SpringBootTestContextBootstrapper:238] - Found @SpringBootConfiguration com.example.HelloWorldSpringBootApplication for test class com.example.TestJpaRestControllerTest
+INFO  23-01-04 09:47:38[Test worker] [SpringBootTestContextBootstrapper:245] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+INFO  23-01-04 09:47:38[Test worker] [SpringBootTestContextBootstrapper:174] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a9ce44, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2220780d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2991524, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4cc5c43b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d1f809, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2290186e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@686a192d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@aecfc07, org.springframework.test.context.event.EventPublishingTestExecutionListener@6f14ce3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2400673b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1c1bb1e7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@71fa6aa7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7d60a62f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5a7e2f07, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1bab3926]
+INFO  23-01-04 09:47:38[Test worker] [TestJpaRestControllerTest:55] - Starting TestJpaRestControllerTest using Java 17.0.3 on 황수연 with PID 9728 (started by user in C:\Users\user\IdeaProjects\HelloWorld-SpringBoot)
+INFO  23-01-04 09:47:38[Test worker] [TestJpaRestControllerTest:640] - The following 1 profile is active: "local"
+INFO  23-01-04 09:47:38[Test worker] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  23-01-04 09:47:38[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+INFO  23-01-04 09:47:38[Test worker] [RepositoryConfigurationExtensionSupport:349] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.database.repository.MemberRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+INFO  23-01-04 09:47:38[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+INFO  23-01-04 09:47:38[Test worker] [RepositoryConfigurationDelegate:262] - Multiple Spring Data modules found, entering strict repository configuration mode
+INFO  23-01-04 09:47:38[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-01-04 09:47:38[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+INFO  23-01-04 09:47:38[Test worker] [EnableEncryptablePropertiesBeanFactoryPostProcessor:40] - Post-processing PropertySource instances
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource Annotations [org.springframework.boot.test.autoconfigure.properties.AnnotationsPropertySource] to EncryptableEnumerablePropertySourceWrapper
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+INFO  23-01-04 09:47:38[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:39[Test worker] [DefaultLazyPropertyFilter:31] - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+INFO  23-01-04 09:47:39[Test worker] [DefaultLazyPropertyResolver:35] - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+INFO  23-01-04 09:47:39[Test worker] [DefaultLazyPropertyDetector:35] - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+INFO  23-01-04 09:47:39[Test worker] [TomcatWebServer:108] - Tomcat initialized with port(s): 0 (https) 8009 (http) 8080 (http)
+INFO  23-01-04 09:47:39[Test worker] [Http11NioProtocol:173] - Initializing ProtocolHandler ["https-jsse-nio-auto-1"]
+INFO  23-01-04 09:47:39[Test worker] [AjpNioProtocol:173] - Initializing ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  23-01-04 09:47:39[Test worker] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-01-04 09:47:39[Test worker] [StandardService:173] - Starting service [Tomcat]
+INFO  23-01-04 09:47:39[Test worker] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.68]
+INFO  23-01-04 09:47:39[Test worker] [TldScanner:173] - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+INFO  23-01-04 09:47:39[Test worker] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-01-04 09:47:39[Test worker] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 1465 ms
+INFO  23-01-04 09:47:39[Test worker] [DefaultLazyEncryptor:32] - Found Custom Encryptor Bean org.jasypt.encryption.pbe.PooledPBEStringEncryptor@5944fbf0 with name: jasyptStringEncryptor
+INFO  23-01-04 09:47:39[Test worker] [HikariDataSource:110] - HikariPool-3 - Starting...
+INFO  23-01-04 09:47:39[Test worker] [HikariDataSource:123] - HikariPool-3 - Start completed.
+INFO  23-01-04 09:47:39[Test worker] [H2ConsoleAutoConfiguration:98] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+INFO  23-01-04 09:47:39[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-01-04 09:47:40[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  23-01-04 09:47:40[quartzScheduler_Worker-1] [TestJobA:16] - 10초마다 Job 실행
+DEBUG 23-01-04 09:47:40[Test worker] [SQL:144] - 
+    
+    drop table if exists member CASCADE 
+DEBUG 23-01-04 09:47:40[Test worker] [SQL:144] - 
+    
+    create table member (
+       mbr_no bigint generated by default as identity,
+        id varchar(255),
+        name varchar(255),
+        primary key (mbr_no)
+    )
+INFO  23-01-04 09:47:40[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-01-04 09:47:40[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-01-04 09:47:40[Test worker] [StdSchedulerFactory:1220] - Using default implementation for ThreadExecutor
+INFO  23-01-04 09:47:40[Test worker] [SchedulerSignalerImpl:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+INFO  23-01-04 09:47:40[Test worker] [QuartzScheduler:229] - Quartz Scheduler v.2.3.2 created.
+INFO  23-01-04 09:47:40[Test worker] [RAMJobStore:155] - RAMJobStore initialized.
+INFO  23-01-04 09:47:40[Test worker] [QuartzScheduler:294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO  23-01-04 09:47:40[Test worker] [StdSchedulerFactory:1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+INFO  23-01-04 09:47:40[Test worker] [StdSchedulerFactory:1378] - Quartz scheduler version: 2.3.2
+INFO  23-01-04 09:47:40[Test worker] [QuartzScheduler:2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@27ad03
+WARN  23-01-04 09:47:40[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-01-04 09:47:40[Test worker] [WelcomePageHandlerMapping:53] - Adding welcome page: class path resource [static/index.html]
+INFO  23-01-04 09:47:41[Test worker] [[/]:173] - Initializing Spring TestDispatcherServlet ''
+INFO  23-01-04 09:47:41[Test worker] [TestDispatcherServlet:525] - Initializing Servlet ''
+INFO  23-01-04 09:47:41[Test worker] [TestDispatcherServlet:547] - Completed initialization in 0 ms
+INFO  23-01-04 09:47:41[Test worker] [ConsumerConfig:376] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [192.168.111.128:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-testgroup-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = testgroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+INFO  23-01-04 09:47:41[Test worker] [AppInfoParser:119] - Kafka version: 3.1.2
+INFO  23-01-04 09:47:41[Test worker] [AppInfoParser:120] - Kafka commitId: f8c67dc3ae0a3265
+INFO  23-01-04 09:47:41[Test worker] [AppInfoParser:121] - Kafka startTimeMs: 1672793261220
+INFO  23-01-04 09:47:41[Test worker] [KafkaConsumer:966] - [Consumer clientId=consumer-testgroup-2, groupId=testgroup] Subscribed to topic(s): test
+INFO  23-01-04 09:47:41[Test worker] [Http11NioProtocol:173] - Starting ProtocolHandler ["https-jsse-nio-auto-1"]
+INFO  23-01-04 09:47:41[Test worker] [AjpNioProtocol:173] - Starting ProtocolHandler ["ajp-nio-0.0.0.0-8009"]
+INFO  23-01-04 09:47:41[Test worker] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-01-04 09:47:41[Test worker] [TomcatWebServer:220] - Tomcat started on port(s): 49822 (https) 8009 (http) 8080 (http) with context path ''
+INFO  23-01-04 09:47:41[Test worker] [RefreshScopeRefreshedEventListener:47] - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+INFO  23-01-04 09:47:41[Test worker] [CachingDelegateEncryptablePropertySource:55] - Property Source Annotations refreshed
+INFO  23-01-04 09:47:41[Test worker] [CachingDelegateEncryptablePropertySource:55] - Property Source test refreshed
+INFO  23-01-04 09:47:41[Test worker] [CachingDelegateEncryptablePropertySource:55] - Property Source Inlined Test Properties refreshed
+INFO  23-01-04 09:47:41[Test worker] [CachingDelegateEncryptablePropertySource:55] - Property Source systemProperties refreshed
+INFO  23-01-04 09:47:41[Test worker] [CachingDelegateEncryptablePropertySource:55] - Property Source systemEnvironment refreshed
+INFO  23-01-04 09:47:41[Test worker] [CachingDelegateEncryptablePropertySource:55] - Property Source random refreshed
+INFO  23-01-04 09:47:41[Test worker] [CachingDelegateEncryptablePropertySource:55] - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+INFO  23-01-04 09:47:41[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource server.ports [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+INFO  23-01-04 09:47:41[Test worker] [EncryptablePropertySourceConverter:76] - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+INFO  23-01-04 09:47:41[Test worker] [EncryptablePropertySourceConverter:76] - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+INFO  23-01-04 09:47:41[Test worker] [EncryptablePropertySourceConverter:81] - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+INFO  23-01-04 09:47:41[Test worker] [SchedulerFactoryBean:729] - Starting Quartz Scheduler now
+INFO  23-01-04 09:47:41[Test worker] [QuartzScheduler:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+INFO  23-01-04 09:47:41[quartzScheduler_Worker-1] [TestJobA:16] - 10초마다 Job 실행
+INFO  23-01-04 09:47:41[Test worker] [TestJpaRestControllerTest:61] - Started TestJpaRestControllerTest in 3.36 seconds (JVM running for 14.777)
+INFO  23-01-04 09:47:41[SpringApplicationShutdownHook] [QuartzScheduler:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:972] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Resetting generation due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:1000] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Request joining group due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaConsumer:1075] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Unsubscribed all topics or patterns and assigned partitions
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:972] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Resetting generation due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:1000] - [Consumer clientId=consumer-testgroup-1, groupId=testgroup] Request joining group due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics:659] - Metrics scheduler closed
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics:663] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics:669] - Metrics reporters closed
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [AppInfoParser:83] - App info kafka.consumer for consumer-testgroup-1 unregistered
+INFO  23-01-04 09:47:41[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaMessageListenerContainer:292] - testgroup: Consumer stopped
+INFO  23-01-04 09:47:41[SpringApplicationShutdownHook] [SchedulerFactoryBean:847] - Shutting down Quartz Scheduler
+INFO  23-01-04 09:47:41[SpringApplicationShutdownHook] [QuartzScheduler:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+INFO  23-01-04 09:47:41[SpringApplicationShutdownHook] [QuartzScheduler:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+INFO  23-01-04 09:47:41[SpringApplicationShutdownHook] [QuartzScheduler:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+INFO  23-01-04 09:47:41[SpringApplicationShutdownHook] [NettyUdpController:33] - ================ Spring @PreDestroy ================
+WARN  23-01-04 09:47:41[SpringApplicationShutdownHook] [CommonAnnotationBeanPostProcessor:185] - Destroy method on bean with name 'nettyUdpController' threw an exception: java.lang.NullPointerException: Cannot invoke "com.example.netty.udp.server.NettyUdpServer.serverDestroy()" because "this.server" is null
+INFO  23-01-04 09:47:41[SpringApplicationShutdownHook] [NettyTcpController:34] - ================ Spring @PreDestroy ================
+INFO  23-01-04 09:47:45[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-01-04 09:47:45[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-01-04 09:47:45[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-01-04 09:47:45[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-01-04 09:47:45[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-2 - Shutdown initiated...
+INFO  23-01-04 09:47:45[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-2 - Shutdown completed.
+INFO  23-01-04 09:47:45[SpringApplicationShutdownHook] [QuartzScheduler:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:972] - [Consumer clientId=consumer-testgroup-2, groupId=testgroup] Resetting generation due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:1000] - [Consumer clientId=consumer-testgroup-2, groupId=testgroup] Request joining group due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaConsumer:1075] - [Consumer clientId=consumer-testgroup-2, groupId=testgroup] Unsubscribed all topics or patterns and assigned partitions
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:972] - [Consumer clientId=consumer-testgroup-2, groupId=testgroup] Resetting generation due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator:1000] - [Consumer clientId=consumer-testgroup-2, groupId=testgroup] Request joining group due to: consumer pro-actively leaving the group
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics:659] - Metrics scheduler closed
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics:663] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics:669] - Metrics reporters closed
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [AppInfoParser:83] - App info kafka.consumer for consumer-testgroup-2 unregistered
+INFO  23-01-04 09:47:46[org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaMessageListenerContainer:292] - testgroup: Consumer stopped
+INFO  23-01-04 09:47:46[SpringApplicationShutdownHook] [SchedulerFactoryBean:847] - Shutting down Quartz Scheduler
+INFO  23-01-04 09:47:46[SpringApplicationShutdownHook] [QuartzScheduler:666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+INFO  23-01-04 09:47:46[SpringApplicationShutdownHook] [QuartzScheduler:585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+INFO  23-01-04 09:47:46[SpringApplicationShutdownHook] [QuartzScheduler:740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+INFO  23-01-04 09:47:46[SpringApplicationShutdownHook] [NettyUdpController:33] - ================ Spring @PreDestroy ================
+WARN  23-01-04 09:47:46[SpringApplicationShutdownHook] [CommonAnnotationBeanPostProcessor:185] - Destroy method on bean with name 'nettyUdpController' threw an exception: java.lang.NullPointerException: Cannot invoke "com.example.netty.udp.server.NettyUdpServer.serverDestroy()" because "this.server" is null
+INFO  23-01-04 09:47:46[SpringApplicationShutdownHook] [NettyTcpController:34] - ================ Spring @PreDestroy ================
+WARN  23-01-04 09:47:48[SpringApplicationShutdownHook] [CommonAnnotationBeanPostProcessor:185] - Destroy method on bean with name 'nettyTcpController' threw an exception: java.lang.NullPointerException: Cannot invoke "io.netty.channel.ChannelFuture.channel()" because "this.future" is null
+INFO  23-01-04 09:47:48[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-01-04 09:47:48[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-3 - Shutdown initiated...
+INFO  23-01-04 09:47:48[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-3 - Shutdown completed.
