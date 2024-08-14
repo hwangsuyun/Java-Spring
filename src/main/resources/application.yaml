@@ -1,0 +1,102 @@
+#spring:
+#  profiles:
+#    active: local
+#
+#  datasource: #DB 접속정보
+#    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#
+#  hikari: #Hikari 설정
+#    maximum-pool-size: 10
+#    #connection-test-query: SELECT 1
+#    data-source-properties:
+#      cachePrepStmts: true
+#      prepStmtCacheSize: 250
+#      prepStmtCacheSqlLimit: 2048
+#      useServerPrepStmts: true
+#
+#  jpa: #JPA 설정
+#    properties:
+#      hibernate:
+#        #방언 설정 https://dololak.tistory.com/465, https://gigas-blog.tistory.com/119
+#        dialect: org.hibernate.dialect.MariaDBDialect
+#        #하이버네이트가 실행하는 모든 SQL문을 콘솔로 출력해 준다.
+#        show_sql: true
+#        #콘솔에 출력되는 JPA 실행 쿼리를 가독성있게 표현한다.
+#        format_sql: true
+#        #디버깅이 용이하도록 SQL문 이외에 추가적인 정보를 출력해 준다.
+#        use_sql_comments: true
+#
+#  mvc: #JSP 설정
+#    view:
+#      prefix: /WEB-INF/jsp/
+#      suffix: .jsp
+#
+#  thymeleaf: #Thymeleaf 설정
+#    #JSP와 같이 사용시 뷰 구분을 위해 컨트롤러가 뷰 이름을 반환시 thymeleaf/ 로 시작하면 타임리프로 처리하도록 view-names 지정
+#    view-names: thymeleaf/*
+#    prefix: classpath:templates/
+#    suffix: .html
+#    #파일 수정시 반영하려면 하면 재시작을 해줘야 한다. 브라우저 새로고침시 수정사항 반영을 취해 cache=false 설정(운영시 true)
+#    cache: false
+#    check-template-location: true
+#
+#log4jdbc: #log4jdbc 설정
+#  spylogdelegator:
+#    name: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+#  dump:
+#    sql:
+#      maxlinelength: 0
+#
+#devtools: #jsp파일 서버 재시작 없이 바로 적용하기 spring-boot-devtools
+#  livereload:
+#    enabled: true
+#
+#--- #local 환경
+#spring:
+#  profiles: local
+#  datasource:
+#    #url: jdbc:log4jdbc:mariadb://localhost:3306/test?characterEncoding=UTF-8&serverTimezone=UTC
+#    url:
+#    hikari:
+#      #username: root
+#      #password: qlalfqjsgh
+#      username:
+#      password:
+#
+#logging: # ROOT레벨 전체 로깅 레벨 결정
+#  level:
+#    root: info
+#    #com.god.bo.test: info #com.god.bo.test 패키지 logging Level > info
+#    #com.god.bo.test.controller: debug #com.god.bo.test.controller 패키지 logging Level > debug
+#
+#--- #dev 환경
+#spring:
+#  profiles: dev
+#  datasource: #TODO : dev용으로 변경 필요
+#    #url: jdbc:log4jdbc:mariadb://localhost:3306/test?characterEncoding=UTF-8&serverTimezone=UTC
+#    url:
+#    hikari:
+#      #username: root
+#      #password: qlalfqjsgh
+#      username:
+#      password:
+#logging: # ROOT레벨 전체 로깅 레벨 결정
+#  level:
+#    root: info
+#
+#--- #prod 환경
+#spring:
+#  profiles: prod
+#  datasource: #TODO : prod용으로 변경 필요
+#    #url: jdbc:log4jdbc:mariadb://localhost:3306/test?characterEncoding=UTF-8&serverTimezone=UTC
+#    url:
+#    hikari:
+#      #username: root
+#      #password: qlalfqjsgh
+#      username:
+#      password:
+#server:
+#  port: 9090
+#logging: # ROOT레벨 전체 로깅 레벨 결정
+#  level:
+#    root: error
